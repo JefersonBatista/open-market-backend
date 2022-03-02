@@ -6,6 +6,6 @@ import { signIn } from "../controllers/sessionsController.js";
 
 const sessionsRouter = Router();
 
-sessionsRouter.post("/sign-in", validateSchema(signInSchema), signIn);
+sessionsRouter.post("/sessions", validateSchema(signInSchema), signIn);
 
 export default sessionsRouter;
